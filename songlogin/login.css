@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 13%;
+}
+
+h1 {
+    font-size: 500%;
+    background-clip: text;
+    background: radial-gradient(ellipse at top, #03001e, #7303c0, transparent),
+                radial-gradient(ellipse at bottom, #ec38bc, transparent);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text 10s linear infinite;
+}
+
+.caixa {
+    border-radius: 1%;
+    height: 45vh;
+    border: 1px solid #fff;
+    padding: 3%;
+    background: radial-gradient(ellipse at top, #03001e, #7303c0, transparent),
+                radial-gradient(ellipse at bottom, #ec38bc, transparent);
+    background-size: 300% 300%;
+    animation: colors 13s ease infinite;
+}
+
+.login {
+    text-align: center;
+    margin-top: 3%;
+    color: #fff;
+    position: relative;
+}
+
+
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes text {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+label {
+    font-size: 120%;
+    display: block;
+    margin-bottom: 3%;
+}
+
+input {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 2px;
+    border-style: none;
+    background-color: #000;
+    color: #fff;
+}
+
+/* icones */
+
+.social a {
+    color: #fff;
+}
+
+.hover-fx {
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    line-height: 84px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+}
+
+.hover-fx:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+} 
+
+.hover-fx:hover {
+    background-color: #fff;
+    color: #151515;
+}
+
+.hover-fx:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* Fim dos icones */
+
+.btn {
+    width: 50%;
+    border-radius: 2px;
+    border-style: none;
+    padding: 10px;
+}
+
+.hover-bt {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
+    font-style: bold;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+}
+
+.hover-bt:after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    box-sizing: content-box;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+} 
+
+.hover-bt:hover {
+    background-color: #fff;
+    color: #151515;
+}
+
+.hover-bt:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+}
